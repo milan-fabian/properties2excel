@@ -24,6 +24,11 @@ usage: java -jar properties-to-excel.jar -e <arg> [-f] [-h] -p <arg> [-t]
                                 'properties')
 ```
 
+### Prequisites
+
+1. Install Java JRE 8 or newer
+2. Download newest properties2excel-cli.jar file from [https://github.com/milan-fabian/properties2excel/releases](https://github.com/milan-fabian/properties2excel/releases)
+
 ### Sample usage
 
 Convert properties files in folder "properties" to Excel file "excel.xlsx":
@@ -38,7 +43,27 @@ Convert Excel file "excel.xlsx" to properties files in folder "properties":
 java -jar properties2excel-cli.jar --from-excel --excel-file excel.xlsx --properties-folder properties
 ```
 
-## Project structure
+## Format of files
+
+### Properties file
+
+Properties files are expected to be in Java properties format with UTF-8 encoding (be careful with BOM). See following links for more details about the format:
+* [https://en.wikipedia.org/wiki/.properties](https://en.wikipedia.org/wiki/.properties)
+* [https://docs.oracle.com/cd/E23095_01/Platform.93/ATGProgGuide/html/s0204propertiesfileformat01.html](https://docs.oracle.com/cd/E23095_01/Platform.93/ATGProgGuide/html/s0204propertiesfileformat01.html)
+* [https://www.baeldung.com/java-properties](https://www.baeldung.com/java-properties)
+
+All properties files are expected to have exactly the same keys, order of the keys is not important.
+
+### Excel file
+
+* First column contains keys
+* First fow contains names of the corresponding properties file (without file extension)
+
+## Information for developers
+
+This application is written in Java and can be compiled using Maven.
+
+### Project structure
 
 * properties2excel-core - Core library, containing the convert logic
 * properties2excel-cli - Command line interface for the core library
