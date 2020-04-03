@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-	    <groupId>sk.mimac.properties2excel</groupId>
+        <groupId>sk.mimac.properties2excel</groupId>
         <artifactId>properties2excel-parent</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
+        <version>1.0</version>
+    </parent>
     <artifactId>properties2excel-core</artifactId>
 
     <name>Properties to Excel - Core</name>
@@ -17,11 +17,11 @@
     
     <dependencies>
         <!-- Logging -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.30</version>
-		</dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
         <!-- Excel library -->
         <dependency>
             <groupId>org.apache.poi</groupId>

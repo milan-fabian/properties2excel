@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-	    <groupId>sk.mimac.properties2excel</groupId>
+        <groupId>sk.mimac.properties2excel</groupId>
         <artifactId>properties2excel-parent</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
+        <version>1.0</version>
+    </parent>
     <artifactId>properties2excel-cli</artifactId>
 
     <name>Properties to Excel - CLI</name>
@@ -16,7 +16,7 @@
     </properties>
     
     <dependencies>
-	    <!-- Core -->
+        <!-- Core -->
         <dependency>
             <groupId>sk.mimac.properties2excel</groupId>
             <artifactId>properties2excel-core</artifactId>
